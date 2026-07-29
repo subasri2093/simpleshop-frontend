@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Return Product</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="return-box">
+
+<h2>Return Product</h2>
+
+<label>Select Reason</label>
+
+<select id="reason">
+
+<option value="">Choose Reason</option>
+
+<option>Product is damaged</option>
+
+<option>Wrong product received</option>
+
+<option>Product not needed anymore</option>
+
+<option>Size is not suitable</option>
+
+<option>Color is different</option>
+
+<option>Quality is not good</option>
+
+<option>Received defective item</option>
+
+<option>Late delivery</option>
+
+<option>Ordered by mistake</option>
+
+<option>Other</option>
+
+</select>
+
+<br><br>
+
+<label>Additional Comments</label>
+
+<textarea
+id="comment"
+rows="5"
+placeholder="Describe your reason...">
+</textarea>
+
+<br><br>
+
+<button onclick="submitReturn()">
+
+Submit Return Request
+
+</button>
+
+</div>
+
+<script src="js/return.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subasri Shopping</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>Subasri Shopping</span>
+    </div>
+
+   <input
+    type="text"
+    id="searchBar"
+    class="search-bar"
+    placeholder="Search Products..."
+    onkeyup="searchProducts()">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">register</a>
+        <a href="admin-login.html">Admin</a>
+    </nav>
+
+</header>
+
+<section class="hero">
+
+    <h1>Welcome to Subasri Shopping</h1>
+
+    <p>Everything You Need in One Place</p>
+
+    <a href="products.html">
+        <button>Shop Now</button>
+    </a>
+
+</section>
+
+
+
+<section class="products">
+
+    <h2>Featured Products</h2>
+
+    <div id="product-grid" class="product-grid"></div>
+
+</section>
+
+<section class="offer">
+
+    <h2>🔥 Deal of the Day</h2>
+
+    <h1>Up to 70% OFF</h1>
+
+    <p>Fashion • Mobiles • Electronics • Watches • Shoes</p>
+
+</section>
+
+<footer>
+
+    <h2>Subasri Shopping</h2>
+
+    <p>Your Favourite Online Shopping Store</p>
+
+    <p>
+        <i class="fa-solid fa-envelope"></i>
+        subasrishopping@gmail.com
+    </p>
+
+    <p>
+        <i class="fa-solid fa-phone"></i>
+        +91 9876543210
+    </p>
+
+    <p>© 2026 Subasri Shopping | All Rights Reserved</p>
+
+</footer>
+
+
+
+
+
+<div class="floating-profile">
+
+    <div class="profile-circle" id="profileIcon">U</div>
+
+    <div class="profile-box" id="profileBox">
+
+        <h3>Logged In Account</h3>
+
+       <p id="userEmail"></p>
+
+    <hr>
+
+    <a href="wishlist.html" class="profile-link">
+        ❤️ Wishlist
+    </a>
+
+    <a href="orders.html" class="profile-link">
+        📦 My Orders
+    </a>
+
+    <a href="returned.html" class="profile-link">
+        ↩️ Returned Products
+</a>
+
+    
+        <button onclick="logout()">Logout</button>
+
+    </div>
+
+</div>
+
+<script src="js/home.js"></script>
+<script src="js/products.js"></script>
+<script src="js/app.js"></script>
+
+
+</body>
+</html>

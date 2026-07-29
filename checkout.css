@@ -1,0 +1,101 @@
+body{
+    margin:0;
+    background:#f1f3f6;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+.navbar{
+    background:#2874f0;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.navbar .logo{
+    color:white;
+    font-size:35px;
+    font-weight:bold;
+}
+
+.navbar nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:30px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.checkout-title{
+    text-align:center;
+    margin:30px 0;
+    font-size:40px;
+}
+
+.checkout-card{
+    width:1000px;
+    margin:20px auto;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+    display:flex;
+    padding:30px;
+    gap:40px;
+}
+
+.left{
+    width:35%;
+    text-align:center;
+}
+
+.left img{
+    width:220px;
+    border-radius:10px;
+}
+
+.left h2{
+    margin-top:15px;
+}
+
+.right{
+    width:65%;
+}
+
+.right input,
+.right textarea,
+.right select{
+
+    width:100%;
+    padding:15px;
+    margin-bottom:18px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:17px;
+    box-sizing:border-box;
+
+}
+
+.right textarea{
+    height:120px;
+    resize:none;
+}
+
+.buy-btn{
+
+    width:100%;
+    padding:16px;
+    background:#fb641b;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:22px;
+    font-weight:bold;
+    cursor:pointer;
+
+}
+
+.buy-btn:hover{
+
+    background:#e85b17;
+
+}

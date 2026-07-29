@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Subasri Shopping</title>
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+
+<header class="navbar">
+
+    <div class="logo">Subasri Shopping</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+
+</header>
+
+<h1 class="checkout-title">Checkout</h1>
+
+<div class="checkout-card">
+
+    <div class="left">
+
+        <div id="checkoutProduct"></div>
+
+    </div>
+
+    <div class="right">
+
+        <input type="text"
+               id="customerName"
+               placeholder="Full Name">
+
+        <input type="tel"
+               id="customerPhone"
+               placeholder="Phone Number">
+
+        <textarea
+            id="customerAddress"
+            placeholder="Delivery Address"></textarea>
+
+        <select id="paymentMethod">
+
+            <option>Cash on Delivery</option>
+
+            <option>UPI</option>
+
+            <option>Debit Card</option>
+
+            <option>Credit Card</option>
+
+        </select>
+
+        <button onclick="placeOrder()" class="buy-btn">
+            Place Order
+        </button>
+
+    </div>
+
+</div>
+
+<script src="js/checkout.js"></script>
+
+
+
+</body>
+</html>

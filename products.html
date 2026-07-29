@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Subasri Shopping - Products</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Subasri Shopping</span>
+        </div>
+
+        <input
+            type="text"
+            placeholder="Search Products..."
+            class="search-bar">
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="products.html" class="active">Products</a>
+
+            <a href="cart.html">Cart</a>
+
+            <a href="login.html">Login</a>
+
+            <a href="returned.html">Returned Products</a>
+
+
+
+        </nav>
+
+    </header>
+
+    <!-- ================= PAGE TITLE ================= -->
+
+    <section class="page-title">
+
+        <h1>Our Products</h1>
+
+        <p>Choose your favourite products</p>
+
+    </section>
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section class="categories">
+
+        <button class="category-btn" onclick="filterProducts('All')">All</button>
+
+        <button class="category-btn" onclick="filterProducts('Electronics')">Electronics</button>
+
+        <button class="category-btn" onclick="filterProducts('Mobiles')">Mobiles</button>
+
+        <button class="category-btn" onclick="filterProducts('Kurtis')">Kurtis</button>
+
+        <button class="category-btn" onclick="filterProducts('Men')">Men</button>
+
+        <button class="category-btn" onclick="filterProducts('Women')">Women</button>
+
+        <button class="category-btn" onclick="filterProducts('Jewellery')">Jewellery</button>
+
+        <button class="category-btn" onclick="filterProducts('Accessories')">Accessories</button>
+
+        <button class="category-btn" onclick="filterProducts('Shoes')">Shoes</button>
+
+        <button class="category-btn" onclick="filterProducts('Watches')">Watches</button>
+
+        <button class="category-btn" onclick="filterProducts('Kitchen')">Kitchen</button>
+
+        <button class="category-btn" onclick="filterProducts('Home')">Home</button>
+
+        <button class="category-btn" onclick="filterProducts('Books')">Books</button>
+
+        <button class="category-btn" onclick="filterProducts('Sports')">Sports</button>
+
+    </section>
+
+    <!-- ================= PRODUCTS ================= -->
+
+   <section class="categories-page">
+<center>
+    <h1>Shop By Category</h1> 
+    </center>
+
+    <div class="category-grid">
+
+        <div class="category-card" onclick="openCategory('Electronics')">
+            <img src="images/electronics.jpg">
+            <h3>Electronics</h3>
+        </div>
+
+        <div class="category-card" onclick="openCategory('Men')">
+            <img src="images/men.jpg">
+            <h3>Men</h3>
+        </div>
+
+        <div class="category-card" onclick="openCategory('Footwear')">
+            <img src="images/shoes.jpg">
+            <h3>Footwear</h3>
+        </div>
+
+        <div class="category-card" onclick="openCategory('Jewellery')">
+            <img src="images/jewellery.jpg">
+            <h3>Jewellery</h3>
+        </div>
+
+        <div class="category-card" onclick="openCategory('Accessories')">
+            <img src="images/accessories.jpg">
+            <h3>Accessories</h3>
+        </div>
+
+        <div class="category-card" onclick="openCategory('Kitchen')">
+            <img src="images/kitchen.jpg">
+            <h3>Kitchen</h3>
+        </div>
+
+        <div class="category-card" onclick="openCategory('Bags')">
+            <img src="images/bag.jpg">
+            <h3>Bags</h3>
+        </div>
+        <div class="category-card" onclick="openCategory('Sarees')">
+    <img src="images/sarees.jpg" alt="Sarees">
+    <h3>Sarees</h3>
+</div>
+<div class="category-card" onclick="openCategory('Kurthi')">
+    <img src="images/kurthi-category.jpg" alt="Kurthi">
+    <h3>Kurthi</h3>
+</div>
+<div class="category-card" onclick="selectCategory('Books')">
+    <img src="images/books.jpg" alt="Books">
+    <h3>Books</h3>
+</div>
+<div class="category-card" onclick="selectCategory('Home')">
+    <img src="images/home.jpg" alt="Home">
+    <h3>Home</h3>
+</div>
+<div class="category-card" onclick="selectCategory('Mobiles')">
+    <img src="images/mobile.jpg" alt="Mobiles">
+    <h3>Mobiles</h3>
+</div>
+    </div>
+
+</section>
+
+<script src="js/products.js"></script>
+<script src="js/productsData.js"></script>
+
+</body>
+
+</html>
